@@ -1,5 +1,5 @@
-# node-minidsp
-This provides a command line interface to control the MiniDSP2x4HD directly over USB HID. It was developped using the plugin version 107 (September 2016) and contains minimal functionality to operate the device under Linux.
+# node-minidsp-ddrc24
+This is a fork of Mrene's node-minidsp, optimized for use with the DDRC-24.  It provides a command line interface to control the DDRC-24 directly via USB HID. It was developped using the plugin version 107 (September 2016) and contains minimal functionality to operate the device under Linux.
 
 DISCLAIMER: The stock miniDSP plugin relies on last-change timestamps to synchronize its state. Changing some properties through this tool may reset that timestamp and force the configuration to be reloaded the next time the official application connects to the device. Backup your configuration first.
 
