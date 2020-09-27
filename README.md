@@ -13,7 +13,7 @@ npm install -g minidsp
 In order to run as a non-privileged user under Linux, you may have to add a udev rule for this specific device. Under `/etc/udev/rules.d`, create a file named `99-minidsp.rules` containing:
 
 ```
-# MiniDSP 2x4HD
+# MiniDSP DDRC-24
 ATTR{idVendor}=="2752", ATTR{idProduct}=="0011", MODE="660", GROUP="plugdev"
 ```
 
