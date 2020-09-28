@@ -100,8 +100,15 @@ class Device {
 		return this.sendCommand([ 0x17, value ? 0x01 : 0x00 ]);
 	}
 	
-	setDirac(value) {
-	  return this.sendCommand([ 0x3F, value ]);
+	setDirac(state) {
+			const setting = {
+				on: Constants.DIRAC_ON,
+				off: Constants.DIRAC_OFF,
+				enable: Constants.DIRAC_ON,
+				disable: Constants.DIRAC_OFF
+			};
+			state = setting[state.toLowerCase()];
+		return this.sendCommand([ 0x3F, state ]);
 	}
 
 	getMute() {
