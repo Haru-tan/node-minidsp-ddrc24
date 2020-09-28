@@ -99,6 +99,10 @@ class Device {
 	setMute(value) {
 		return this.sendCommand([ 0x17, value ? 0x01 : 0x00 ]);
 	}
+	
+	setDirac(value) {
+	  return this.sendCommand([ 0x3F, value ]);
+	}
 
 	getMute() {
 		return this._getMasterStatus().then((status) => status.mute);
