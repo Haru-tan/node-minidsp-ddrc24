@@ -93,6 +93,24 @@ program
 	});
 
 program
+	.command('dirac_on')
+	.description('Sets the Dirac on/off flag')
+	.action((enable) => {
+		let dsp = device();
+		let value = 0x00;
+		actions.push(dsp.setDirac(value));
+	});
+
+program
+	.command('dirac_off')
+	.description('Sets the Dirac on/off flag')
+	.action((disable) => {
+		let dsp = device();
+		let value = 0x01;
+		actions.push(dsp.setDirac(value));
+	});
+
+program
 	.command('gain <gain>')
 	.description('Set the master gain level (acceptable range -127 dB to 0 dB)')
 	.action((gain) => {
