@@ -41,8 +41,7 @@ $ minidsp  --help
     input-gain <gain>  Sets the input gain level (-127 dB to 12 dB)
     monitor            Monitor input levels
     proxy              Runs a proxy on port 5333 intended for use with the mobile application
-    dirac_on           Enables Dirac Live Processing
-    dirac_off          Disables Dirac Live Processing
+    dirac [enable]     Sets the Dirac Live processing flac
 
   Options:
 
