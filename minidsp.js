@@ -93,12 +93,11 @@ program
 	});
 
 program
-	.command('dirac_on')
+	.command('dirac <state>')
 	.description('Sets the Dirac on/off flag')
-	.action((enable) => {
+	.action((state) => {
 		let dsp = device();
-		let value = 0x00;
-		actions.push(dsp.setDirac(value));
+		actions.push(dsp.setDirac(state));
 	});
 
 program
