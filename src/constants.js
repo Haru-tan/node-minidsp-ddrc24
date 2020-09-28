@@ -5,7 +5,10 @@ const constants = {
 
 	INPUT_ANALOG: 0,
 	INPUT_TOSLINK: 1,
-	INPUT_USB: 2
+	INPUT_USB: 2,
+	
+	DIRAC_ON: 0x00,
+	DIRAC_OFF: 0x01
 };
 
 module.exports = constants;
