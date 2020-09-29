@@ -156,8 +156,8 @@ class Device {
 	}
 
 	getInputLevels() {
-		return this.sendCommand([ 0x14, 0x00, 0x44, 0x02 ]).then((data) => {
-			if (data.slice(1, 4).compare(Buffer.from([ 0x14, 0x00, 0x44 ])) !== 0) {
+		return this.sendCommand([ 0x14, 0x00, 0x10, 0x02 ]).then((data) => {
+			if (data.slice(1, 4).compare(Buffer.from([ 0x14, 0x00, 0x10 ])) !== 0) {
 				throw new Error('Unexpected response ' + data);
 			}
 
