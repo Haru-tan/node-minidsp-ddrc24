@@ -1,7 +1,7 @@
 {
-  "name": "minidsp",
+  "name": "minidsp-ddrc24",
   "version": "1.0.4",
-  "description": "An interface to the MiniDSP 2x4HD",
+  "description": "An interface to the MiniDSP DDRC-24",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mrene/node-minidsp"
+    "url": "https://github.com/haru-tan/node-minidsp-ddrc24"
   },
   "preferGlobal": true,
   "devDependencies": {
